@@ -1,0 +1,4 @@
+../DriveLayer/Src/Hall_Sensor.c:14:6:Hall_Init	1
+../DriveLayer/Src/Hall_Sensor.c:44:6:Hall_GetEncoding	4
+../DriveLayer/Src/Hall_Sensor.c:64:6:Hall_GetPeriod	5
+../DriveLayer/Src/Hall_Sensor.c:87:16:HALL_SectorEncoding	7
