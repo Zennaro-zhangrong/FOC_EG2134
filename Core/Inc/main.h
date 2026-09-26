@@ -71,6 +71,15 @@ void Error_Handler(void);
 #define M0_ENC_Z_Pin GPIO_PIN_9
 #define M0_ENC_Z_GPIO_Port GPIOC
 #define M0_ENC_Z_EXTI_IRQn EXTI9_5_IRQn
+#define SPI_CS_Pin GPIO_PIN_15
+#define SPI_CS_GPIO_Port GPIOA
+#define SPI_CLK_Pin GPIO_PIN_10
+#define SPI_CLK_GPIO_Port GPIOC
+#define SPI_CLK_EXTI_IRQn EXTI15_10_IRQn
+#define SPI_MISO_Pin GPIO_PIN_11
+#define SPI_MISO_GPIO_Port GPIOC
+#define SPI_MOSI_Pin GPIO_PIN_12
+#define SPI_MOSI_GPIO_Port GPIOC
 #define LED_Pin GPIO_PIN_2
 #define LED_GPIO_Port GPIOD
 #define M0_ENC_A_Pin GPIO_PIN_4
