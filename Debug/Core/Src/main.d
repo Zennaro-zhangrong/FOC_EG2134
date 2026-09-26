@@ -42,7 +42,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Src/../../DriveLayer/Inc/Motor.h \
  ../Core/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/PWM_EG2134.h \
  ../Core/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/Hall_Sensor.h \
- ../Core/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/clark_transformation.h
+ ../Core/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/clark_transformation.h \
+ ../Core/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/PID.h \
+ ../Core/Src/../../MiddleLayer/Inc/park_transformation.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -92,3 +94,5 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/PWM_EG2134.h:
 ../Core/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/Hall_Sensor.h:
 ../Core/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/clark_transformation.h:
+../Core/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/PID.h:
+../Core/Src/../../MiddleLayer/Inc/park_transformation.h:

@@ -1,5 +1,10 @@
-../DriveLayer/Src/Motor.c:22:6:Motor_Init	1
-../DriveLayer/Src/Motor.c:39:6:HAL_ADC_ConvCpltCallback	2
-../DriveLayer/Src/Motor.c:52:6:HAL_TIM_PeriodElapsedCallback	5
-../DriveLayer/Src/Motor.c:70:6:HAL_GPIO_EXTI_Callback	7
-../DriveLayer/Src/Motor.c:82:13:Clark_forward_transformation	1
+../DriveLayer/Src/Motor.c:37:6:Motor_Init	1
+../DriveLayer/Src/Motor.c:89:6:HAL_ADC_ConvCpltCallback	2
+../DriveLayer/Src/Motor.c:103:6:HAL_TIM_PeriodElapsedCallback	6
+../DriveLayer/Src/Motor.c:129:6:HAL_GPIO_EXTI_Callback	1
+../DriveLayer/Src/Motor.c:140:13:Clark_forward_transformation	1
+../DriveLayer/Src/Motor.c:154:13:Park_forward_transformation	1
+../DriveLayer/Src/Motor.c:170:13:Park_inverse_transformation	1
+../DriveLayer/Src/Motor.c:184:13:Electrical_Angle_Get	1
+../DriveLayer/Src/Motor.c:192:13:Current_Loop	4
+../DriveLayer/Src/Motor.c:233:13:Speed_LooP	7

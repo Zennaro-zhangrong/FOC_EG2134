@@ -1,4 +1,6 @@
-../DriveLayer/Src/Hall_Sensor.c:14:6:Hall_Init	1
-../DriveLayer/Src/Hall_Sensor.c:44:6:Hall_GetEncoding	4
-../DriveLayer/Src/Hall_Sensor.c:64:6:Hall_GetPeriod	5
-../DriveLayer/Src/Hall_Sensor.c:87:16:HALL_SectorEncoding	7
+../DriveLayer/Src/Hall_Sensor.c:19:6:Hall_Init	1
+../DriveLayer/Src/Hall_Sensor.c:61:6:Hall_GetEncoding	4
+../DriveLayer/Src/Hall_Sensor.c:85:6:Hall_GetFrequency	4
+../DriveLayer/Src/Hall_Sensor.c:121:16:HALL_SectorEncoding	7
+../DriveLayer/Src/Hall_Sensor.c:134:6:HALL_EXTI_Callback	5
+../DriveLayer/Src/Hall_Sensor.c:143:6:HALL_TIM_Supervised_Update	6

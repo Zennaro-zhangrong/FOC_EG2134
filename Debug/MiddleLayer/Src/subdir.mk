@@ -5,16 +5,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../MiddleLayer/Src/PID.c \
 ../MiddleLayer/Src/clark_transformation.c \
 ../MiddleLayer/Src/park_transformation.c \
 ../MiddleLayer/Src/svpwm.c 
 
 OBJS += \
+./MiddleLayer/Src/PID.o \
 ./MiddleLayer/Src/clark_transformation.o \
 ./MiddleLayer/Src/park_transformation.o \
 ./MiddleLayer/Src/svpwm.o 
 
 C_DEPS += \
+./MiddleLayer/Src/PID.d \
 ./MiddleLayer/Src/clark_transformation.d \
 ./MiddleLayer/Src/park_transformation.d \
 ./MiddleLayer/Src/svpwm.d 
@@ -27,7 +30,7 @@ MiddleLayer/Src/%.o MiddleLayer/Src/%.su MiddleLayer/Src/%.cyclo: ../MiddleLayer
 clean: clean-MiddleLayer-2f-Src
 
 clean-MiddleLayer-2f-Src:
-	-$(RM) ./MiddleLayer/Src/clark_transformation.cyclo ./MiddleLayer/Src/clark_transformation.d ./MiddleLayer/Src/clark_transformation.o ./MiddleLayer/Src/clark_transformation.su ./MiddleLayer/Src/park_transformation.cyclo ./MiddleLayer/Src/park_transformation.d ./MiddleLayer/Src/park_transformation.o ./MiddleLayer/Src/park_transformation.su ./MiddleLayer/Src/svpwm.cyclo ./MiddleLayer/Src/svpwm.d ./MiddleLayer/Src/svpwm.o ./MiddleLayer/Src/svpwm.su
+	-$(RM) ./MiddleLayer/Src/PID.cyclo ./MiddleLayer/Src/PID.d ./MiddleLayer/Src/PID.o ./MiddleLayer/Src/PID.su ./MiddleLayer/Src/clark_transformation.cyclo ./MiddleLayer/Src/clark_transformation.d ./MiddleLayer/Src/clark_transformation.o ./MiddleLayer/Src/clark_transformation.su ./MiddleLayer/Src/park_transformation.cyclo ./MiddleLayer/Src/park_transformation.d ./MiddleLayer/Src/park_transformation.o ./MiddleLayer/Src/park_transformation.su ./MiddleLayer/Src/svpwm.cyclo ./MiddleLayer/Src/svpwm.d ./MiddleLayer/Src/svpwm.o ./MiddleLayer/Src/svpwm.su
 
 .PHONY: clean-MiddleLayer-2f-Src
 

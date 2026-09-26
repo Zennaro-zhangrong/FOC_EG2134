@@ -1,8 +1,5 @@
-MiddleLayer/Src/svpwm.o: ../MiddleLayer/Src/svpwm.c \
- ../MiddleLayer/Src/../Inc/svpwm.h \
- ../MiddleLayer/Src/../Inc/../../DriveLayer/Inc/PWM_EG2134.h \
- ../MiddleLayer/Src/../Inc/../../DriveLayer/Inc/../../Core/Inc/tim.h \
- ../MiddleLayer/Src/../Inc/../../DriveLayer/Inc/../../Core/Inc/main.h \
+MiddleLayer/Src/PID.o: ../MiddleLayer/Src/PID.c \
+ ../MiddleLayer/Src/../Inc/PID.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -34,16 +31,11 @@ MiddleLayer/Src/svpwm.o: ../MiddleLayer/Src/svpwm.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- ../MiddleLayer/Src/../../DriveLayer/Inc/Motor.h \
- ../MiddleLayer/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/PWM_EG2134.h \
- ../MiddleLayer/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/Hall_Sensor.h \
- ../MiddleLayer/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/clark_transformation.h \
- ../MiddleLayer/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/PID.h \
- ../MiddleLayer/Src/../Inc/park_transformation.h
-../MiddleLayer/Src/../Inc/svpwm.h:
-../MiddleLayer/Src/../Inc/../../DriveLayer/Inc/PWM_EG2134.h:
-../MiddleLayer/Src/../Inc/../../DriveLayer/Inc/../../Core/Inc/tim.h:
-../MiddleLayer/Src/../Inc/../../DriveLayer/Inc/../../Core/Inc/main.h:
+ ../MiddleLayer/Src/../../DriveLayer/Inc/UART2.h \
+ ../MiddleLayer/Src/../../DriveLayer/Inc/../../Core/Inc/usart.h \
+ ../MiddleLayer/Src/../../DriveLayer/Inc/../../Core/Inc/main.h \
+ ../MiddleLayer/Src/../../DriveLayer/Inc/../Inc/RingBuffer.h
+../MiddleLayer/Src/../Inc/PID.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
@@ -75,9 +67,7 @@ MiddleLayer/Src/svpwm.o: ../MiddleLayer/Src/svpwm.c \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
-../MiddleLayer/Src/../../DriveLayer/Inc/Motor.h:
-../MiddleLayer/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/PWM_EG2134.h:
-../MiddleLayer/Src/../../DriveLayer/Inc/../../DriveLayer/Inc/Hall_Sensor.h:
-../MiddleLayer/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/clark_transformation.h:
-../MiddleLayer/Src/../../DriveLayer/Inc/../../MiddleLayer/Inc/PID.h:
-../MiddleLayer/Src/../Inc/park_transformation.h:
+../MiddleLayer/Src/../../DriveLayer/Inc/UART2.h:
+../MiddleLayer/Src/../../DriveLayer/Inc/../../Core/Inc/usart.h:
+../MiddleLayer/Src/../../DriveLayer/Inc/../../Core/Inc/main.h:
+../MiddleLayer/Src/../../DriveLayer/Inc/../Inc/RingBuffer.h:

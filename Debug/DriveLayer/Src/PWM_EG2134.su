@@ -1,4 +1,4 @@
 ../DriveLayer/Src/PWM_EG2134.c:17:6:EG2134_Init	8	static
-../DriveLayer/Src/PWM_EG2134.c:40:6:EG2134_PWM_Compare_Update	16	static
-../DriveLayer/Src/PWM_EG2134.c:48:6:EG2134_Test	48	static
-../DriveLayer/Src/PWM_EG2134.c:70:13:PWM_HAL_Init	16	static
+../DriveLayer/Src/PWM_EG2134.c:43:6:EG2134_PWM_Compare_Update	16	static
+../DriveLayer/Src/PWM_EG2134.c:51:6:EG2134_Test	48	static
+../DriveLayer/Src/PWM_EG2134.c:73:13:PWM_HAL_Init	16	static

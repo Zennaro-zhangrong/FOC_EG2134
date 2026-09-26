@@ -1,3 +1,4 @@
-../MiddleLayer/Src/svpwm.c:24:6:SVPWM_Generate	1
-../MiddleLayer/Src/svpwm.c:39:13:SVPWM_calculate	13
-../MiddleLayer/Src/svpwm.c:105:6:SVPWM_Test	3
+../MiddleLayer/Src/svpwm.c:25:6:SVPWM_Generate	1
+../MiddleLayer/Src/svpwm.c:40:13:SVPWM_Polar_Coordinate	13
+../MiddleLayer/Src/svpwm.c:106:6:SVPWM_Test	3
+../MiddleLayer/Src/svpwm.c:128:13:SVPWM_Rectangular_Coordinate	1

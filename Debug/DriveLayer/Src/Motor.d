@@ -36,6 +36,7 @@ DriveLayer/Src/Motor.o: ../DriveLayer/Src/Motor.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
  ../DriveLayer/Src/../Inc/../../DriveLayer/Inc/Hall_Sensor.h \
  ../DriveLayer/Src/../Inc/../../MiddleLayer/Inc/clark_transformation.h \
+ ../DriveLayer/Src/../Inc/../../MiddleLayer/Inc/PID.h \
  ../DriveLayer/Src/../../DriveLayer/Inc/UART2.h \
  ../DriveLayer/Src/../../DriveLayer/Inc/../../Core/Inc/usart.h \
  ../DriveLayer/Src/../../DriveLayer/Inc/../../Core/Inc/main.h \
@@ -43,7 +44,10 @@ DriveLayer/Src/Motor.o: ../DriveLayer/Src/Motor.c \
  ../DriveLayer/Src/../../Core/Inc/adc.h \
  ../DriveLayer/Src/../../Core/Inc/main.h \
  ../DriveLayer/Src/../../DriveLayer/Inc/Hall_Sensor.h \
+ ../DriveLayer/Src/../../DriveLayer/Inc/DataReception.h \
+ ../DriveLayer/Src/../Inc/DataReception.h \
  ../DriveLayer/Src/../../MiddleLayer/Inc/clark_transformation.h \
+ ../DriveLayer/Src/../../MiddleLayer/Inc/park_transformation.h \
  ../DriveLayer/Src/../../MiddleLayer/Inc/svpwm.h \
  ../DriveLayer/Src/../../MiddleLayer/Inc/../../DriveLayer/Inc/PWM_EG2134.h
 ../DriveLayer/Src/../Inc/Motor.h:
@@ -83,6 +87,7 @@ DriveLayer/Src/Motor.o: ../DriveLayer/Src/Motor.c \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 ../DriveLayer/Src/../Inc/../../DriveLayer/Inc/Hall_Sensor.h:
 ../DriveLayer/Src/../Inc/../../MiddleLayer/Inc/clark_transformation.h:
+../DriveLayer/Src/../Inc/../../MiddleLayer/Inc/PID.h:
 ../DriveLayer/Src/../../DriveLayer/Inc/UART2.h:
 ../DriveLayer/Src/../../DriveLayer/Inc/../../Core/Inc/usart.h:
 ../DriveLayer/Src/../../DriveLayer/Inc/../../Core/Inc/main.h:
@@ -90,6 +95,9 @@ DriveLayer/Src/Motor.o: ../DriveLayer/Src/Motor.c \
 ../DriveLayer/Src/../../Core/Inc/adc.h:
 ../DriveLayer/Src/../../Core/Inc/main.h:
 ../DriveLayer/Src/../../DriveLayer/Inc/Hall_Sensor.h:
+../DriveLayer/Src/../../DriveLayer/Inc/DataReception.h:
+../DriveLayer/Src/../Inc/DataReception.h:
 ../DriveLayer/Src/../../MiddleLayer/Inc/clark_transformation.h:
+../DriveLayer/Src/../../MiddleLayer/Inc/park_transformation.h:
 ../DriveLayer/Src/../../MiddleLayer/Inc/svpwm.h:
 ../DriveLayer/Src/../../MiddleLayer/Inc/../../DriveLayer/Inc/PWM_EG2134.h:
