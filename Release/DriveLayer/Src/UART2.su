@@ -1,0 +1,4 @@
+../DriveLayer/Src/UART2.c:18:6:uart2_Init	8	static
+../DriveLayer/Src/UART2.c:30:6:uasrt2_printf	280	static
+../DriveLayer/Src/UART2.c:56:16:usart2_send_loop	16	static
+../DriveLayer/Src/UART2.c:71:6:usart2_Receive_Callback	8	static

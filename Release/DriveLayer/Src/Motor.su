@@ -1,0 +1,6 @@
+../DriveLayer/Src/Motor.c:192:13:Current_Loop	16	static
+../DriveLayer/Src/Motor.c:233:13:Speed_LooP	16	static
+../DriveLayer/Src/Motor.c:37:6:Motor_Init	48	static
+../DriveLayer/Src/Motor.c:89:6:HAL_ADC_ConvCpltCallback	8	static
+../DriveLayer/Src/Motor.c:103:6:HAL_TIM_PeriodElapsedCallback	8	static
+../DriveLayer/Src/Motor.c:129:6:HAL_GPIO_EXTI_Callback	8	static

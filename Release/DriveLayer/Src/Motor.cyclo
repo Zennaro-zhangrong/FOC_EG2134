@@ -1,0 +1,6 @@
+../DriveLayer/Src/Motor.c:192:13:Current_Loop	4
+../DriveLayer/Src/Motor.c:233:13:Speed_LooP	6
+../DriveLayer/Src/Motor.c:37:6:Motor_Init	1
+../DriveLayer/Src/Motor.c:89:6:HAL_ADC_ConvCpltCallback	2
+../DriveLayer/Src/Motor.c:103:6:HAL_TIM_PeriodElapsedCallback	6
+../DriveLayer/Src/Motor.c:129:6:HAL_GPIO_EXTI_Callback	1
