@@ -16,7 +16,7 @@ uint8_t Tx_RingBuffer[TX_RingBuffer_SIZE] = {0};
 uartHandle uart2_Handle;
 
 void uart2_Init(void){
-	uart2_Handle.huart = &huart2;
+	uart2_Handle.huart = &huart4;
 	RingBuffer_Init(&uart2_Handle.Rx_RingBuffer, Rx_RingBuffer, RX_RingBuffer_SIZE);
 	RingBuffer_Init(&uart2_Handle.Tx_RingBuffer, Tx_RingBuffer, TX_RingBuffer_SIZE);
 	HAL_UART_Receive_IT(uart2_Handle.huart, &uart2_Handle.RX_Data, 1);
