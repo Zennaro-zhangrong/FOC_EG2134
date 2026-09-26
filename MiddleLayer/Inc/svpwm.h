@@ -13,6 +13,7 @@
 
 typedef struct {
 	uint8_t sector;
+	uint16_t Theta;
 	int PhaseAlpha;
 	int PhaseBeta;
 	int Duty_A;
@@ -24,6 +25,7 @@ typedef struct {
 
 
 extern SVPWM_Handle SVPWM;
+
 
 void SVPWM_Generate(void);
 void SVPWM_Test(EG2134_Handle *pEG2134, unsigned short Amplitude, float Frequency);

@@ -18,12 +18,13 @@
 SVPWM_Handle SVPWM;
 
 static void SVPWM_calculate(uint16_t amplitude, int32_t angle);
-
+static void SVPWM_Polar_Coordinate(uint16_t amplitude, int32_t angle);
+static void SVPWM_Rectangular_Coordinate(void);
 
 
 void SVPWM_Generate(void)
 {
-	//SVPWM_calculate();
+	SVPWM_Rectangular_Coordinate();
 }
 
 
@@ -36,7 +37,7 @@ void SVPWM_Generate(void)
  * MaxDuty = PWM周期计数值 (1680)
  * DeadTime = 死区时间 (25个定时器周期), 由调用方在外部补偿
  */
-static void SVPWM_calculate(uint16_t amplitude, int32_t angle)
+static void SVPWM_Polar_Coordinate(uint16_t amplitude, int32_t angle)
 {
 	/* 第1步: 扇区判定(1~6) :扇区定义：[0,60]->1,[60,120]->2,...,[300,360]->6*/
 	uint8_t sector = 0;
@@ -49,13 +50,13 @@ static void SVPWM_calculate(uint16_t amplitude, int32_t angle)
 		sector++;
 	}
 	SVPWM.sector = (sector % 6) + 1;
-
+	SVPWM.Theta = (SVPWM.sector - 1) * 60 + angle;
 	/* 第2步: 矢量分解，求Vfirst，Vsecond的模长 */
-	uint16_t T_Vfirst = amplitude
+	float T_Vfirst = amplitude
 			* sin((M_PI / 3.0f) - (float)angle * M_PI / 180.0f)
 			/ sin(M_PI / 3.0f);
 
-	uint16_t T_Vsecond = amplitude
+	float T_Vsecond = amplitude
 			* sin((float)angle * M_PI / 180.0f)
 			/ sin(M_PI / 3.0f);
 
@@ -105,20 +106,30 @@ static void SVPWM_calculate(uint16_t amplitude, int32_t angle)
 void SVPWM_Test(EG2134_Handle *pEG2134, unsigned short Amplitude, float Frequency){
 	/* ---- 0. 初始化 SVPWM 参数 ---- */
 	SVPWM.MaxDuty  = 1679;
-	SVPWM.DeadTime = 25;
+	SVPWM.DeadTime = 30;
 
-	int32_t theta_deg = fmodf(12 * Frequency * 360.0f * HAL_GetTick() * 0.001f, 360.0f);
+	int32_t theta_deg = fmodf(15 * Frequency * 360.0f * HAL_GetTick() * 0.001f, 360.0f);
 	while(theta_deg > 360000){
 		theta_deg -= 360000;
 	}
 	while(theta_deg <= 0){
 		theta_deg += 360000;
 	}
-	SVPWM_calculate(Amplitude, (int32_t)theta_deg);
+	SVPWM_Polar_Coordinate(Amplitude, (int32_t)theta_deg);
 
 	/* ---- 4. 更新 PWM ---- */
-	pEG2134->Duty_cycle_A = SVPWM.Duty_A;
-	pEG2134->Duty_cycle_B = SVPWM.Duty_B;
-	pEG2134->Duty_cycle_C = SVPWM.Duty_C;
+	pEG2134->Duty_cycle_A = (uint16_t)SVPWM.Duty_A;
+	pEG2134->Duty_cycle_B = (uint16_t)SVPWM.Duty_B;
+	pEG2134->Duty_cycle_C = (uint16_t)SVPWM.Duty_C;
 	EG2134_PWM_Compare_Update(pEG2134);
+}
+
+
+static void SVPWM_Rectangular_Coordinate(void){
+	int alpha = SVPWM.PhaseAlpha;
+	int beta = SVPWM.PhaseBeta;
+	double radian = atan2((double)beta, (double)alpha);
+	int32_t angle = (radian + 3.1415926f * 2.0f) * 180.0f / 3.1415926f;
+	uint16_t Amplitude = (uint16_t)sqrt((double)alpha * alpha + (double)beta * beta);
+	SVPWM_Polar_Coordinate(Amplitude, angle);
 }
