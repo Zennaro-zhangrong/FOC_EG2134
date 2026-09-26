@@ -20,9 +20,9 @@ void EG2134_Init(void)
 	EG2134_M0.PWM_CH_A = TIM_CHANNEL_1;
 	EG2134_M0.PWM_CH_B = TIM_CHANNEL_2;
 	EG2134_M0.PWM_CH_C = TIM_CHANNEL_3;
-	EG2134_M0.Duty_cycle_A = 0;
-	EG2134_M0.Duty_cycle_B = 0;
-	EG2134_M0.Duty_cycle_C = 0;
+	EG2134_M0.Duty_cycle_A = 1679;
+	EG2134_M0.Duty_cycle_B = 1679;
+	EG2134_M0.Duty_cycle_C = 1679;
 
 	EG2134_M1.htim = &htim8;
 	EG2134_M1.PWM_CH_A = TIM_CHANNEL_1;
@@ -32,8 +32,11 @@ void EG2134_Init(void)
 	EG2134_M1.Duty_cycle_B = 0;
 	EG2134_M1.Duty_cycle_C = 0;
 
-	PWM_HAL_Init(&EG2134_M0);
+
 	PWM_HAL_Init(&EG2134_M1);
+	PWM_HAL_Init(&EG2134_M0);
+	HAL_TIM_Base_Start_IT(&htim1);
+	HAL_TIM_Base_Start_IT(&htim10);
 }
 
 

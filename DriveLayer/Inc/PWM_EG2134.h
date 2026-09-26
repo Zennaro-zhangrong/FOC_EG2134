@@ -10,13 +10,13 @@
 
 #include "../../Core/Inc/tim.h"
 typedef struct{
-	TIM_HandleTypeDef *htim;
-	uint32_t PWM_CH_A;
-	uint32_t PWM_CH_B;
-	uint32_t PWM_CH_C;
-	uint16_t Duty_cycle_A;
-	uint16_t Duty_cycle_B;
-	uint16_t Duty_cycle_C;
+	TIM_HandleTypeDef *htim;	//定时器外设句柄指针
+	uint32_t PWM_CH_A;	//A相驱动对应定时器PWM通道
+	uint32_t PWM_CH_B;	//B相驱动对应定时器PWM通道
+	uint32_t PWM_CH_C;	//C相驱动对应定时器PWM通道
+	uint16_t Duty_cycle_A;	//A相输出占空比
+	uint16_t Duty_cycle_B;	//B相输出占空比
+	uint16_t Duty_cycle_C;	//C相输出占空比
 
 }EG2134_Handle;
 
